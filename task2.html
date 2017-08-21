@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Transformers</title>
+
+  <link rel="stylesheet" href="styles/style.css"></link>
+
+</head>
+
+<body onload="initialiseBattleground()">
+
+  <div id="tb-wrapper">
+    <div id="tb-header"><h1>Transformers Battleground!</h1></div>
+    <div id="tb-arena">
+      <div id="tb-left">
+        <h3>Autobot</h3>
+        <div id="tb-left-fighters" class="tb-fighters">
+
+        </div>
+        <button type="button" onclick="addFighter({allegiance: 'autobot'})">Add Fighter</button>
+      </div>
+      <div id="tb-right">
+        <h3>Decepticon</h3>
+        <div id="tb-right-fighters" class="tb-fighters"></div>
+        <button type="button" onclick="addFighter({allegiance: 'decepticon'})">Add Fighter</button>
+      </div>
+    </div>
+    <div id="tb-fight-button">
+      <button type="button" onclick="startBattle()">FIGHT!</button>
+    </div>
+    <div id="tb-footer"></div>
+  </div>
+
+  <script src="data/transformers.js"></script>
+  <script src="js/task2.js"></script>
+</body>
+</html>

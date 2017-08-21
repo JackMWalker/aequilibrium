@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Castles</title>
+
+</head>
+
+<body>
+  <div class="castle-input-wrapper">
+    <p>Enter comma separated numbers to represent the land: e.g (0,1,1,5,6,6,4)</p>
+    <input type="text" id="castle-input" />
+    <button type="button" onclick="handleCalculateCastles()">Calculate</button>
+    <div id="castle-output"></div>
+  </div>
+
+  <br><br>
+
+  <button type="button" onclick="handleRandomTests({numTests: 10, landLength: 20})">Random Tests</button>
+  <div id="castle-test-output"></div>
+  <script src="js/task1.js"></script>
+</body>
+</html>

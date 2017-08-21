@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+#tb-wrapper {
+  width: 800px;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 3px dashed #888; }
+  #tb-wrapper #tb-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eee; }
+  #tb-wrapper #tb-arena {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1; }
+    #tb-wrapper #tb-arena .tb-fighters {
+      display: flex;
+      flex-direction: column; }
+      #tb-wrapper #tb-arena .tb-fighters .tb-fighter {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        border-bottom: 1px dashed #ddd; }
+        #tb-wrapper #tb-arena .tb-fighters .tb-fighter h4 {
+          margin-top: 0px;
+          margin-bottom: 0px; }
+        #tb-wrapper #tb-arena .tb-fighters .tb-fighter > div {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1; }
+        #tb-wrapper #tb-arena .tb-fighters .tb-fighter table {
+          width: 48%;
+          display: inline-block; }
+          #tb-wrapper #tb-arena .tb-fighters .tb-fighter table tr td {
+            text-align: right; }
+            #tb-wrapper #tb-arena .tb-fighters .tb-fighter table tr td:nth-child(2) {
+              padding-left: 10px; }
+    #tb-wrapper #tb-arena #tb-left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 10px; }
+    #tb-wrapper #tb-arena #tb-right {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 10px; }
+  #tb-wrapper #tb-fight-button {
+    display: flex;
+    justify-content: center; }
+    #tb-wrapper #tb-fight-button button {
+      font-size: 2em;
+      padding: 10px 30px;
+      border: none;
+      background-color: red;
+      color: white; }
+  #tb-wrapper #tb-footer {
+    width: 100%;
+    height: 100px;
+    padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */
